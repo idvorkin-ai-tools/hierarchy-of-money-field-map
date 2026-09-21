@@ -18,9 +18,9 @@
 <main>
   <div class="eyebrow"><span class="box bb mono">EXPLAINER · WALKTHROUGH</span></div>
   <h1>Each layer exists because the one below broke</h1>
-  <div class="authors">Next, Play, or the arrows. Source: <a class="lnk" href="https://gregorygundersen.com/blog/2026/09/20/hierarchy-of-money/" target="_blank" rel="noopener">Gundersen</a>. Full story in the <a class="lnk" href="../story/intermediation.html">chapters</a>.</div>
+  <div class="authors">The whole stack, one break at a time. Each chapter also has its own walk. Source: <a class="lnk" href="https://gregorygundersen.com/blog/2026/09/20/hierarchy-of-money/" target="_blank" rel="noopener">Gundersen</a>.</div>
 
-  <div class="walk" id="walk" data-cta="Press next, or play, and we walk it one problem at a time.">
+  <div class="walk" id="walk" data-walk="spine">
     <div class="walk-bar">
       <button type="button" class="walk-btn" data-act="prev">Back</button>
       <button type="button" class="walk-btn" data-act="next">Next</button>
@@ -49,6 +49,15 @@
       </div>
     </div>
   </div>
+  <nav class="walk-nav" aria-label="Chapter walks">
+    <a href="../story/intermediation.html">Intermediation</a>
+    <a href="../story/creation.html">Creation</a>
+    <a href="../story/centralization.html">Centralization</a>
+    <a href="../story/exchange.html">Exchange</a>
+    <a href="../story/fiat.html">Fiat</a>
+    <a href="../story/hierarchy.html">Hierarchy</a>
+    <a href="walkthrough.html" class="on">Whole stack</a>
+  </nav>
 
   <h2 id="the-sentence">The sentence the walk is proving</h2>
   <blockquote class="q off">
@@ -58,184 +67,10 @@
   <p>Each of those three sentences is a rigidity. Credit, bank money, reserves, a reserve currency, and fiat are the patches. None of them is needed on day one. Stones would have been enough if everyone always had some, and if shops always trusted a promise, and if harvest never drained the vaults, and if the next village took your stones at par.</p>
   <p>They don't. So the stack exists.</p>
 
-  <div class="callout">The illustrated chapters: <a class="lnk" href="../story/intermediation.html">Intermediation</a> · <a class="lnk" href="../story/creation.html">Creation</a> · <a class="lnk" href="../story/centralization.html">Centralization</a> · <a class="lnk" href="../story/exchange.html">Exchange</a> · <a class="lnk" href="../story/fiat.html">Fiat</a> · back to the <a class="lnk" href="../index.html">map</a>.</div>
+  <div class="callout">Walk a chapter: <a class="lnk" href="../story/intermediation.html">Intermediation</a> · <a class="lnk" href="../story/creation.html">Creation</a> · <a class="lnk" href="../story/centralization.html">Centralization</a> · <a class="lnk" href="../story/exchange.html">Exchange</a> · <a class="lnk" href="../story/fiat.html">Fiat</a> · <a class="lnk" href="../story/hierarchy.html">Hierarchy</a> · back to the <a class="lnk" href="../index.html">map</a>.</div>
 </main>
 <footer>Walkthrough of Gregory Gundersen's hierarchy, in the same problem-then-block shape as <a href="https://idvork.in/ai-orchestrator">AI Orchestrators</a>. The argument is his; the animals and this page are ours.</footer>
-<script>
-(function(){
-  var STEPS = [
-    {
-      t: "The whole stack",
-      b: "",
-      pl: "Where we end up",
-      p: "Stones, notes, reserves, a reserve currency, then fiat. A human economy sitting on promises that point up.",
-      sl: "Why it exists",
-      s: "None of it is needed on day one. Every layer is there because the one below went rigid in a specific way.",
-      img: "../images/s_hierarchy.png",
-      cap: "Notes between villagers. Reserves between banks. The tortoise at the top."
-    },
-    {
-      t: "Barter",
-      b: "",
-      pl: "The problem",
-      p: "The dairy farmer wants corn when he has no milk. The corn farmer wants meat the butcher will not take corn for. You can only trade when both of you want what the other has, right now.",
-      sl: "The solution",
-      s: "<b>Special gray stones.</b> Hard to collect, so they stand for value. People can transact when they would like.",
-      img: "../images/panel1_stones.png",
-      cap: "The bull pays the beaver in stones."
-    },
-    {
-      t: "No stones today",
-      b: "Okay, great, now there is money.",
-      pl: "The problem",
-      p: "The bull needs boots now and will have stones after the herd sells. The beaver will not wait. Having stones today is better than having them in a year.",
-      sl: "The solution",
-      s: "<b>Credit, then interest.</b> A promise on paper, plus extra stones for the wait. Time now has a price.",
-      img: "../images/panel2_iou.png",
-      cap: "The bull turns out an empty pouch. The beaver writes a note."
-    },
-    {
-      t: "Nobody will lend to a stranger",
-      b: "Okay, great, now time has a price.",
-      pl: "The problem",
-      p: "The owl has stones in a jar and no one to lend them to. The bull needs a loan and the shops do not know him. The two never meet.",
-      sl: "The solution",
-      s: "<b>A bank.</b> The raccoon borrows from the owl at three and lends to the bull at five. The spread is a living. Word spreads.",
-      img: "../images/panel3_banker.png",
-      cap: "The owl brings stones. The raccoon writes a line. The bull takes a note."
-    },
-    {
-      t: "The vault is not the bank",
-      b: "Okay, great, now there is a banker.",
-      pl: "The problem",
-      p: "Stones go in, loans go out, and counting the pile tells the raccoon nothing. One person's deposit is not sitting on a shelf with their name on it.",
-      sl: "The solution",
-      s: "<b>A balance sheet.</b> What the bank owns or is owed, against what it owes. The two lists have to match.",
-      img: "../images/n10_balance_sheet.png",
-      cap: "Assets on the left, liabilities on the right."
-    },
-    {
-      t: "A rumour empties the vault",
-      b: "Okay, great, now the books balance.",
-      pl: "The problem",
-      p: "The goat sees a queue and gets in it. The raccoon is owed plenty of stones. He does not have them <em>now</em>. Solvent, not liquid. Forced sales destroy value.",
-      sl: "The solution",
-      s: "<b>A backstop, and later a night of grace.</b> A larger bank buys the book. Then banks lend each other overnight. This break never really goes away — every layer above exists because it keeps happening.",
-      img: "../images/panel4_run.png",
-      cap: "The goat at the head of the queue. The vault is full of promises, not stones."
-    },
-    {
-      t: "Carting stones is the job",
-      b: "Okay, great, now a bigger bank can catch a small one.",
-      pl: "The problem",
-      p: "Nobody wants to walk around with a sack of stones. Heavy, dangerous, and the shops do not want a back-room pile either.",
-      sl: "The solution",
-      s: "<b>Banknotes.</b> A paper claim on the raccoon. Shops start treating the note as payment. Money is whatever the other party will accept.",
-      img: "../images/s_payment.png",
-      cap: "The bull leaves the sack and takes a note."
-    },
-    {
-      t: "Banks owe each other by accident",
-      b: "Okay, great, now notes circulate.",
-      pl: "The problem",
-      p: "Stone runners all day. The raccoon pays the badger ten thousand; the badger pays the raccoon eight. Gross settlement is waste, and harvest makes the residual huge.",
-      sl: "The solution",
-      s: "<b>Netting, then overnight deferral.</b> Settle the difference at night. Borrow one night if you must. The overnight rate is born.",
-      img: "../images/n2_netting.png",
-      cap: "One small pile instead of a hundred trips."
-    },
-    {
-      t: "Your own deposits are not money to another bank",
-      b: "Okay, great, now banks can wait a night.",
-      pl: "The problem",
-      p: "Harvest. The raccoon's vault is empty. He asks the badger for a night. The badger says no. A line the raccoon writes himself means nothing across the table.",
-      sl: "The solution",
-      s: "<b>Reserves from a bank-of-banks.</b> Debt moves up. The tortoise issues money that banks will accept from each other — and, in a crisis, lends when no one else will.",
-      img: "../images/s_gridlock.png",
-      cap: "The raccoon asks. The badger says no."
-    },
-    {
-      t: "A village cannot pay another village in its own currency",
-      b: "Okay, great, now banks can settle.",
-      pl: "The problem",
-      p: "Gray stones are not money over the mountain. The fox funds the village with red debt until harvests fail. People want out. Four red stones for one black, then default.",
-      sl: "The solution",
-      s: "<b>A reserve currency.</b> Nobody voted. The crow's notes are simply the ones you don't bother to exchange. A habit, then a peg, then a privilege.",
-      img: "../images/s_default.png",
-      cap: "The fox's empty purse. The others walk away."
-    },
-    {
-      t: "The promise outgrows the pile",
-      b: "Okay, great, now the region settles in black money.",
-      pl: "The problem",
-      p: "Too many claims on too few black stones. Defending convertibility would wreck the crow's own village. The peg cannot be held.",
-      sl: "The solution",
-      s: "<b>Fiat.</b> They stop exchanging notes for stones. Taxes, wages and contracts stay in black money. And yet nothing happened — until trust does.",
-      img: "../images/panel6_fiat.png",
-      cap: "The crow shuts the vault. The market does not look up."
-    }
-  ];
-
-  var root = document.getElementById("walk");
-  var i = 0, playing = false, timer = null;
-  var range = root.querySelector("input[type=range]");
-  var count = root.querySelector(".walk-count");
-  var bridge = root.querySelector(".walk-bridge");
-  var title = root.querySelector(".walk-t");
-  var labP = root.querySelector(".walk-lab.p");
-  var labS = root.querySelector(".walk-lab.s");
-  var bodyP = root.querySelector("[data-col=p]");
-  var bodyS = root.querySelector("[data-col=s]");
-  var img = root.querySelector(".walk-fig img");
-  var cap = root.querySelector(".walk-fig figcaption");
-  var prev = root.querySelector("[data-act=prev]");
-  var next = root.querySelector("[data-act=next]");
-  var play = root.querySelector("[data-act=play]");
-
-  function go(n){
-    i = Math.max(0, Math.min(STEPS.length - 1, n));
-    var s = STEPS[i];
-    bridge.textContent = s.b || "";
-    title.textContent = s.t;
-    labP.textContent = s.pl;
-    labS.textContent = s.sl;
-    bodyP.innerHTML = s.p;
-    bodyS.innerHTML = s.s;
-    img.src = s.img;
-    img.alt = s.cap;
-    cap.textContent = s.cap;
-    range.value = i;
-    count.textContent = i + " / " + (STEPS.length - 1);
-    prev.disabled = i === 0;
-    next.disabled = i === STEPS.length - 1;
-  }
-
-  function stop(){
-    playing = false;
-    play.textContent = "Play";
-    if (timer) { clearInterval(timer); timer = null; }
-  }
-
-  prev.addEventListener("click", function(){ stop(); go(i - 1); });
-  next.addEventListener("click", function(){ stop(); go(i + 1); });
-  range.addEventListener("input", function(){ stop(); go(+range.value); });
-  play.addEventListener("click", function(){
-    if (playing) { stop(); return; }
-    playing = true;
-    play.textContent = "Pause";
-    if (i === STEPS.length - 1) go(0);
-    timer = setInterval(function(){
-      if (i >= STEPS.length - 1) { stop(); return; }
-      go(i + 1);
-    }, 4200);
-  });
-  document.addEventListener("keydown", function(e){
-    if (e.target && (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA")) return;
-    if (e.key === "ArrowRight") { e.preventDefault(); stop(); go(i + 1); }
-    if (e.key === "ArrowLeft") { e.preventDefault(); stop(); go(i - 1); }
-  });
-  go(0);
-})();
-</script>
+<script src="walks.js"></script>
+<script src="walk.js"></script>
 </body>
 </html>

@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../paper.css" />
 </head>
-<body>
+<body class="walk-page">
 <header class="bar"><div class="bar-in">
   <div class="brand"><span class="dot"></span>MONEY&nbsp;//&nbsp;FIELD&nbsp;MAP</div>
   <a class="back" href="../index.html#story">← field map</a>
@@ -20,7 +20,47 @@
   <h1>Exchange</h1>
   <div class="authors">The illustrated village parable, nearly verbatim, with the animal cast</div>
   <div class="paperlink" style="border-left-color:var(--off)"><span class="lbl">Source</span><a href="https://gregorygundersen.com/blog/2026/09/20/hierarchy-of-money/" target="_blank" rel="noopener">The Hierarchy of Money — Gregory Gundersen ↗</a></div>
-  <div class="tldr"><b>This page is the story.</b> Later pages will be explainers grown from it — one idea at a time. For now, this is Gundersen's wording with the raccoon, the bull, the tortoise and the rest in the roles.</div>
+  <div class="tldr"><b>Walk this chapter, then read it.</b> Next, Play, or the arrows. One break per section. The wording is below.</div>
+
+  <div class="walk" id="walk" data-walk="exchange">
+    <div class="walk-bar">
+      <button type="button" class="walk-btn" data-act="prev">Back</button>
+      <button type="button" class="walk-btn" data-act="next">Next</button>
+      <button type="button" class="walk-btn go" data-act="play">Play</button>
+      <div class="walk-scrub"><input type="range" min="0" max="6" value="0" aria-label="Walk this chapter, step by step"></div>
+      <span class="walk-count"></span>
+    </div>
+    <div class="walk-stage">
+      <div class="walk-lede">
+        <p class="walk-bridge"></p>
+        <p class="walk-t"></p>
+      </div>
+      <figure class="walk-fig">
+        <img alt="">
+        <figcaption></figcaption>
+      </figure>
+      <div class="walk-cols">
+        <div>
+          <p class="walk-lab p"></p>
+          <p class="walk-body" data-col="p"></p>
+        </div>
+        <div>
+          <p class="walk-lab s"></p>
+          <p class="walk-body" data-col="s"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="walk-nav" aria-label="Chapter walks">
+    <a href="intermediation.html">Intermediation</a>
+    <a href="creation.html">Creation</a>
+    <a href="centralization.html">Centralization</a>
+    <a href="exchange.html" class="on">Exchange</a>
+    <a href="fiat.html">Fiat</a>
+    <a href="hierarchy.html">Hierarchy</a>
+    <a href="../explainers/walkthrough.html">Whole stack</a>
+  </nav>
+
 
 <h2 id="currency">Currency</h2>
 
@@ -61,5 +101,7 @@
   <div class="callout"><a class="lnk" href="centralization.html">← Centralization</a> · <a class="lnk" href="../index.html">map</a> · <a class="lnk" href="fiat.html">Fiat →</a></div>
 </main>
 <footer>Gregory Gundersen's <a href="https://gregorygundersen.com/blog/2026/09/20/hierarchy-of-money/" target="_blank" rel="noopener">The Hierarchy of Money</a> (20 Sep 2026), illustrated and mapped. The argument is his; the animals and this site are ours. Built September 2026.</footer>
+<script src="../explainers/walks.js"></script>
+<script src="../explainers/walk.js"></script>
 </body>
 </html>

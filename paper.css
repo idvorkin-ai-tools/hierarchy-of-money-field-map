@@ -135,7 +135,11 @@ main a:not([class]):hover{text-decoration-color:var(--def)}
 .walk-page h1{font-size:clamp(20px,3.4vw,28px);margin:0 0 4px}
 .walk-page .eyebrow{margin-bottom:8px}
 .walk-page .authors{margin:0 0 12px}
+.walk-page .paperlink,.walk-page .tldr{display:none}
 .walk-page main{padding-top:24px}
+.walk-nav{display:flex;flex-wrap:wrap;gap:8px 14px;margin:8px 0 22px;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px}
+.walk-nav a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid transparent}
+.walk-nav a:hover,.walk-nav a.on{color:var(--def);border-bottom-color:var(--def)}
 
 .transcript a.ts:hover{color:var(--def);border-bottom-color:var(--def)}
 table.kv{border-collapse:collapse;width:100%;margin:14px 0 26px;font-size:14px}
