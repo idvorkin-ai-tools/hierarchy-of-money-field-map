@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Hierarchy of Money, mapped — explainers from a village parable</title>
+<meta name="description" content="Gregory Gundersen's Hierarchy of Money, turned into explainers. We start with the illustrated story — his wording, our animals — and grow a page for each idea." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="paper.css" />
+<style>
+  main{max-width:960px}
+  .hero{padding:24px 0 8px}
+  .hero h1{font-size:clamp(32px,5.5vw,52px);line-height:1.05;margin:10px 0 14px;letter-spacing:-.01em}
+  .hero .sub{font-size:18px;color:var(--ink-dim);max-width:720px;line-height:1.55}
+  .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:26px 0 8px}
+  .fact{border:1px solid var(--line-soft);border-radius:8px;padding:12px 14px}
+  .fact .k{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim)}
+  .fact .v{font-size:20px;font-weight:600;margin-top:4px}
+  section{padding:56px 0;border-bottom:1px solid var(--line-soft);scroll-margin-top:64px}
+  section:last-of-type{border-bottom:none}
+  .arc-head{display:flex;align-items:baseline;gap:14px;margin:0 0 6px;flex-wrap:wrap}
+  .arc-head .idx{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;color:var(--ink-dim)}
+  .arc-head h2{margin:0;font-size:26px}
+  .arc-sub{color:var(--ink-dim);margin:0 0 22px;max-width:680px}
+  .row{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:16px 0;border-top:1px solid var(--line-soft);align-items:start}
+  .row:first-of-type{border-top:none}
+  .row .num{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--ink-dim);padding-top:3px}
+  .row .name{font-weight:600;font-size:17px;line-height:1.3}
+  .row .name a{color:var(--ink)}
+  .row .meta{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--ink-dim);margin:4px 0 6px;display:flex;flex-wrap:wrap;gap:10px}
+  .row .desc{color:var(--ink-dim);font-size:14.5px;line-height:1.55}
+  .amber .row .name a:hover{color:var(--off)} .cyan .row .name a:hover{color:var(--def)}
+  .check{width:16px;height:16px;border:1px solid var(--ink-dim);border-radius:4px;display:inline-block;vertical-align:-3px;margin-right:6px;cursor:pointer;background:transparent}
+  .check.on{background:var(--off);border-color:var(--off)}
+  .cyan .check.on{background:var(--def);border-color:var(--def)}
+  .spine{list-style:none;padding:0;margin:0 0 8px;display:grid;gap:0}
+  .spine li{display:grid;grid-template-columns:148px 1fr;gap:16px;padding:14px 0;border-top:1px solid var(--line-soft);align-items:baseline}
+  .spine li:first-child{border-top:none}
+  .spine .step{font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--off-bright)}
+  .spine .step.b{color:var(--def)}
+  .spine .say{font-size:15.5px;line-height:1.6}
+  .spine .say b{color:var(--ink)}
+  .links{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
+  .links a{display:block;border:1px solid var(--line-soft);border-radius:8px;padding:12px 14px;color:var(--ink);text-decoration:none}
+  .links a:hover{border-color:var(--def)}
+  .links a b{display:block;font-size:15px;margin-bottom:3px}
+  .links a span{font-size:13px;color:var(--ink-dim)}
+  .progress{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-dim);margin-top:8px}
+  .soon .name{font-weight:500;color:var(--ink-dim)}
+</style>
+</head>
+<body>
+<header class="bar"><div class="bar-in">
+  <div class="brand"><span class="dot"></span>MONEY&nbsp;//&nbsp;FIELD&nbsp;MAP</div>
+  <a class="back" href="https://idvorkin-ai-tools.github.io/">← all maps</a>
+</div></header>
+<main>
+  <div class="hero">
+    <div class="eyebrow"><span class="box wb mono">GUNDERSEN · 20 SEP 2026</span><span class="mono">a story, turning into explainers</span></div>
+    <h1>The Hierarchy of Money, mapped</h1>
+    <p class="sub">Gregory Gundersen's village parable is the best plain-language account of how money actually works: stones become notes, notes become reserves, a village's money becomes the world's. This map starts with the illustrated story — his wording, our animals — and turns that story into various explainers, one idea at a time.</p>
+    <div class="facts">
+      <div class="fact"><div class="k">The post</div><div class="v"><a class="lnk" href="https://gregorygundersen.com/blog/2026/09/20/hierarchy-of-money/" target="_blank" rel="noopener">Gundersen ↗</a></div></div>
+      <div class="fact"><div class="k">The story</div><div class="v"><a class="lnk" href="story/intermediation.html">5 chapters, drawn</a></div></div>
+      <div class="fact"><div class="k">The cast</div><div class="v"><a class="lnk" href="story/cast.html">11 animals</a></div></div>
+      <div class="fact"><div class="k">Now</div><div class="v">the story, first</div></div>
+    </div>
+    <p class="progress" id="progress">Tick a page when you have worked through it; this browser remembers.</p>
+  </div>
+
+  <section id="spine">
+    <div class="arc-head"><span class="idx">00</span><h2>The spine</h2></div>
+    <p class="arc-sub">Five layers. Each exists because the one below went rigid. If you read nothing else, read this list — every explainer on this map unpacks one of these.</p>
+    <ul class="spine">
+      <li><span class="step">1 · Commodity</span><span class="say"><b>A villager could not settle a debt by making more promises.</b> Stones are money because they are hard to collect. Credit and interest are stacked on top the first time someone needs boots today and stones next year. <a class="lnk" href="story/intermediation.html">Intermediation</a></span></li>
+      <li><span class="step">2 · Bank money</span><span class="say"><b>A bank could not settle a debt by creating more of its own deposits.</b> The raccoon writes a line and the bull has a note. Notes are money between villagers. They are not money between banks. <a class="lnk" href="story/creation.html">Creation</a></span></li>
+      <li><span class="step">3 · Reserves</span><span class="say"><b>The tortoise issues money that banks will accept from each other.</b> Harvest drains stones, overnight loans fail, the system gridlocks, and debt moves up. Elasticity and a single blunt rate. <a class="lnk" href="story/centralization.html">Centralization</a></span></li>
+      <li><span class="step b">4 · Reserve currency</span><span class="say"><b>One village could not settle a debt by creating more of its own currency.</b> The fox defaults. The crow's money becomes the habit, then the peg. <a class="lnk" href="story/exchange.html">Exchange</a></span></li>
+      <li><span class="step b">5 · Fiat</span><span class="say"><b>And yet nothing happened.</b> Convertibility ends. Taxes, wages and contracts stay in black money. The floor was a promise, and the building was never resting on it. <a class="lnk" href="story/fiat.html">Fiat</a></span></li>
+    </ul>
+  </section>
+
+  <section id="story" class="amber">
+    <div class="arc-head"><span class="idx">01 · THE STORY</span><h2>The illustrated parable</h2></div>
+    <p class="arc-sub">What we have today. Gundersen's chapters, nearly verbatim, with the raccoon, the bull, the tortoise, the fox, the heron and the crow in the roles. Pictures sit on the matching sections. This is the source the explainers will grow from.</p>
+    <div class="row"><div class="num"><span class="check" data-p="s1"></span>S1</div><div><div class="name"><a href="story/intermediation.html">Intermediation</a></div><div class="meta"><span>Money · Supply · Debt · Interest · Bank · Balance · Illiquidity · Speculation</span></div><div class="desc">Stones, then a promise, then a bank. Why a pile in the vault is not the same as a balance sheet, and what a rumour does to a solvent bank.</div></div></div>
+    <div class="row"><div class="num"><span class="check" data-p="s2"></span>S2</div><div><div class="name"><a href="story/creation.html">Creation</a></div><div class="meta"><span>Payment · Settlement · Residual · Deferral · Acceptance · Creation</span></div><div class="desc">Banknotes, stone runners, netting, the overnight rate, and the stroke of the pen that writes a deposit into existence.</div></div></div>
+    <div class="row"><div class="num"><span class="check" data-p="s3"></span>S3</div><div><div class="name"><a href="story/centralization.html">Centralization</a></div><div class="meta"><span>Squeeze · Gridlock · Backstop · Central bank · Reserves · Inflation · Policy</span></div><div class="desc">Harvest drains the stones. Two banks cannot pay each other. The tortoise becomes the bank-of-banks, then the rate.</div></div></div>
+    <div class="row"><div class="num"><span class="check" data-p="s4"></span>S4</div><div><div class="name"><a href="story/exchange.html">Exchange</a></div><div class="meta"><span>Currency · Trade · Exchange · Correspondence · Exposure · Default · Reserve</span></div><div class="desc">The fox's village, the heron's, the crow's. Why black money becomes the thing you don't bother to exchange.</div></div></div>
+    <div class="row"><div class="num"><span class="check" data-p="s5"></span>S5</div><div><div class="name"><a href="story/fiat.html">Fiat</a></div><div class="meta"><span>Devaluation · Conference · Privilege · Dilemma · Float · Fiat</span></div><div class="desc">The peg, the privilege, the dilemma, and the day convertibility ends and the market does not notice.</div></div></div>
+    <div class="row"><div class="num"><span class="check" data-p="s6"></span>S6</div><div><div class="name"><a href="story/hierarchy.html">Hierarchy</a></div><div class="meta"><span>the closing argument, one page</span></div><div class="desc">The pattern in three sentences, and the line the whole thing rests on: for now, black money is the best money in the world.</div></div></div>
+    <div class="row"><div class="num"><span class="check" data-p="cast"></span></div><div><div class="name"><a href="story/cast.html">The cast</a></div><div class="meta"><span>11 original animals</span></div><div class="desc">Raccoon banker, bull rancher, beaver shoemaker, owl widow, badger rival bank, goat teacher, field mouse harvest, tortoise central bank, fox / heron / crow for the three villages.</div></div></div>
+  </section>
+
+  <section id="explainers" class="cyan">
+    <div class="arc-head"><span class="idx">02 · EXPLAINERS</span><h2>Turning the story into pages</h2></div>
+    <p class="arc-sub">Next. Each of these will be an original explainer — not a retelling of the parable, a page that takes one idea and makes it hold. They are listed so the map shows where it is going. The story is up; these come after.</p>
+    <div class="row soon"><div class="num">E1</div><div><div class="name">Why a stone is money</div><div class="meta"><span>from Money · Supply</span></div><div class="desc">Scarcity, labour, and the flood that is monetary policy without a committee.</div></div></div>
+    <div class="row soon"><div class="num">E2</div><div><div class="name">Credit is just a promise with a price on time</div><div class="meta"><span>from Debt · Interest</span></div><div class="desc">The bull needs boots today. The extra five stones are not a trick.</div></div></div>
+    <div class="row soon"><div class="num">E3</div><div><div class="name">A bank writes money into existence</div><div class="meta"><span>from Bank · Balance · Creation</span></div><div class="desc">Two lists that must match, and a line in the ledger that is not a stone.</div></div></div>
+    <div class="row soon"><div class="num">E4</div><div><div class="name">Solvent is not the same as liquid</div><div class="meta"><span>from Illiquidity · Speculation</span></div><div class="desc">The vault can be empty while the books balance. That is the run.</div></div></div>
+    <div class="row soon"><div class="num">E5</div><div><div class="name">Your own promises are never payment</div><div class="meta"><span>from Settlement · Gridlock · Hierarchy</span></div><div class="desc">The sentence the whole structure is. Why each layer exists.</div></div></div>
+    <div class="row soon"><div class="num">E6</div><div><div class="name">A reserve currency is a habit, then a privilege</div><div class="meta"><span>from Reserve · Conference · Privilege · Dilemma · Fiat</span></div><div class="desc">Nobody voted for black money. Then they wrote the habit down. Then the promise outgrew the pile.</div></div></div>
+  </section>
+
+  <section id="sources">
+    <div class="arc-head"><span class="idx">03</span><h2>Sources</h2></div>
+    <div class="links">
+      <a href="https://gregorygundersen.com/blog/2026/09/20/hierarchy-of-money/" target="_blank" rel="noopener"><b>The Hierarchy of Money</b><span>Gregory Gundersen, 20 September 2026 — the parable this map is built from</span></a>
+      <a href="https://sites.bu.edu/perry/lectures/mb-lectures/" target="_blank" rel="noopener"><b>Money and Banking</b><span>Perry Mehrling — the lecture series Gundersen credits for the hierarchy</span></a>
+      <a href="https://www.bankofengland.co.uk/quarterly-bulletin/2014/q1/money-creation-in-the-modern-economy" target="_blank" rel="noopener"><b>Money Creation in the Modern Economy</b><span>Bank of England, 2014 — what a stroke of the pen actually is</span></a>
+      <a href="https://idvorkin-ai-tools.github.io/" target="_blank" rel="noopener"><b>All maps</b><span>the rest of the explainer shelf</span></a>
+    </div>
+  </section>
+</main>
+<footer>Gregory Gundersen's <a href="https://gregorygundersen.com/blog/2026/09/20/hierarchy-of-money/">The Hierarchy of Money</a>. The argument is his; the animals and this map are ours. Built September 2026.</footer>
+<script>
+(function(){
+  var KEY='money-field-map-progress';var st={};try{st=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+  var boxes=document.querySelectorAll('.check');
+  function render(){var n=0;boxes.forEach(function(b){var on=!!st[b.dataset.p];b.classList.toggle('on',on);if(on)n++});
+    var p=document.getElementById('progress');if(p)p.textContent=n?n+' pages ticked. This browser remembers.':'Tick a page when you have worked through it; this browser remembers.'}
+  boxes.forEach(function(b){b.addEventListener('click',function(){st[b.dataset.p]=!st[b.dataset.p];try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}render()})});
+  render();
+})();
+</script>
+</body>
+</html>
