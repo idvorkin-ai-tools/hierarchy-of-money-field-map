@@ -10,17 +10,15 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../paper.css" />
 </head>
-<body>
+<body class="walk-page">
 <header class="bar"><div class="bar-in">
   <div class="brand"><span class="dot"></span>MONEY&nbsp;//&nbsp;FIELD&nbsp;MAP</div>
   <a class="back" href="../index.html#explainers">← field map</a>
 </div></header>
 <main>
-  <div class="eyebrow"><span class="box bb mono">EXPLAINER · WALKTHROUGH</span><span class="mono">problem, then the layer that exists because of it</span></div>
+  <div class="eyebrow"><span class="box bb mono">EXPLAINER · WALKTHROUGH</span></div>
   <h1>Each layer exists because the one below broke</h1>
-  <div class="authors">The same shape as <a class="lnk" href="https://idvork.in/ai-orchestrator" target="_blank" rel="noopener">AI Orchestrators</a>: nothing here was designed as a stack. It arrived one break at a time.</div>
-  <div class="paperlink" style="border-left-color:var(--def)"><span class="lbl">Source</span><a href="https://gregorygundersen.com/blog/2026/09/20/hierarchy-of-money/" target="_blank" rel="noopener">The Hierarchy of Money — Gregory Gundersen ↗</a></div>
-  <div class="tldr"><b>Press Next, or Play.</b> Ten breaks. Each solution is money of a kind the layer below could not create for itself. The illustrated story is <a class="lnk" href="../story/intermediation.html">here</a> if you want Gundersen's wording in full.</div>
+  <div class="authors">Next, Play, or the arrows. Source: <a class="lnk" href="https://gregorygundersen.com/blog/2026/09/20/hierarchy-of-money/" target="_blank" rel="noopener">Gundersen</a>. Full story in the <a class="lnk" href="../story/intermediation.html">chapters</a>.</div>
 
   <div class="walk" id="walk" data-cta="Press next, or play, and we walk it one problem at a time.">
     <div class="walk-bar">
@@ -30,9 +28,15 @@
       <div class="walk-scrub"><input type="range" min="0" max="10" value="0" aria-label="Walk the hierarchy, step by step"></div>
       <span class="walk-count"></span>
     </div>
-    <div class="walk-story">
-      <p class="walk-bridge"></p>
-      <p class="walk-t"></p>
+    <div class="walk-stage">
+      <div class="walk-lede">
+        <p class="walk-bridge"></p>
+        <p class="walk-t"></p>
+      </div>
+      <figure class="walk-fig">
+        <img alt="">
+        <figcaption></figcaption>
+      </figure>
       <div class="walk-cols">
         <div>
           <p class="walk-lab p"></p>
@@ -44,11 +48,6 @@
         </div>
       </div>
     </div>
-    <div class="walk-dots" aria-hidden="true"></div>
-    <figure class="walk-fig">
-      <img alt="">
-      <figcaption></figcaption>
-    </figure>
   </div>
 
   <h2 id="the-sentence">The sentence the walk is proving</h2>
@@ -192,21 +191,11 @@
   var prev = root.querySelector("[data-act=prev]");
   var next = root.querySelector("[data-act=next]");
   var play = root.querySelector("[data-act=play]");
-  var dots = root.querySelector(".walk-dots");
-
-  STEPS.forEach(function(_, n){
-    var d = document.createElement("button");
-    d.type = "button";
-    d.className = "walk-dot";
-    d.addEventListener("click", function(){ stop(); go(n); });
-    dots.appendChild(d);
-  });
 
   function go(n){
     i = Math.max(0, Math.min(STEPS.length - 1, n));
     var s = STEPS[i];
-    bridge.textContent = s.b || root.getAttribute("data-cta");
-    if (!s.b) bridge.style.opacity = i === 0 ? "1" : ".85";
+    bridge.textContent = s.b || "";
     title.textContent = s.t;
     labP.textContent = s.pl;
     labS.textContent = s.sl;
@@ -219,7 +208,6 @@
     count.textContent = i + " / " + (STEPS.length - 1);
     prev.disabled = i === 0;
     next.disabled = i === STEPS.length - 1;
-    dots.querySelectorAll(".walk-dot").forEach(function(d, k){ d.classList.toggle("on", k === i); });
   }
 
   function stop(){
